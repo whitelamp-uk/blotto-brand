@@ -1,0 +1,104 @@
+
+
+:root {
+
+    /* General style guide */
+    --blotto-dfn-clr-black:             hsla(0,0%,0%,1);
+    --blotto-dfn-clr-charcoal:          hsla(240,2%,14%,1);
+    --blotto-dfn-clr-charcoal-hi:       hsla(240,2%,50%,1);
+    --blotto-dfn-clr-charcoal-lo:       hsla(240,2%,13%,1);
+    --blotto-dfn-clr-cyan:              hsla(175,100%,20%,1);
+    --blotto-dfn-clr-cyan-hi:           hsla(175,100%,31%,1);
+    --blotto-dfn-clr-cyan-lo:           hsla(175,100%,19%,1);
+    --blotto-dfn-clr-grey:              hsla(60,1%,78%,1);
+    --blotto-dfn-clr-grey-lo:           hsla(60,1%,72%,1);
+    --blotto-dfn-clr-grey-hi:           hsla(60,1%,85%,1);
+    --blotto-dfn-clr-grey-light:        hsla(60,1%,92%,1);
+    --blotto-dfn-clr-grey-deep:         hsla(60,1%,40%,1);
+    --blotto-dfn-clr-orange:            hsla(30,100%,40%,1);
+    --blotto-dfn-clr-red:               hsla(354,88%,38%,1);
+    --blotto-dfn-clr-red-hi:            hsla(354,88%,46%,1);
+    --blotto-dfn-clr-red-lo:            hsla(354,88%,30%,1);
+    --blotto-dfn-clr-red-deep:          hsla(354,88%,15%,1);
+    --blotto-dfn-clr-white:             hsla(0,0%,100%,1);
+    --blotto-dfn-clr-white-chiffon:     hsla(0,0%,100%,0.95);
+    --blotto-dfn-fnt-default:           Helvetica Neue,Helvetica,Verdana,Arial,sans-serif;
+    --blotto-dfn-fsz-default:           16pt;
+    --blotto-dfn-fsz-h2:                2.2em;
+    --blotto-dfn-fsz-h3:                1.6em;
+
+    /* Borders */
+    --blotto-color-bdr-button:          var(--blotto-dfn-clr-charcoal-hi) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-hi);
+    --blotto-color-bdr-button-lgt-hvr:  var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo);
+    --blotto-color-bdr-button-lst-acv:  var(--blotto-dfn-clr-cyan-lo) var(--blotto-dfn-clr-cyan-hi) var(--blotto-dfn-clr-cyan-hi) var(--blotto-dfn-clr-cyan-lo);
+    --blotto-color-bdr-button-opt-acv:  var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi);
+    --blotto-color-bdr-button-opt-avh:  var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo);
+    --blotto-color-bdr-form-options:    var(--blotto-dfn-clr-red);
+    --blotto-color-bdr-table:           var(--blotto-dfn-clr-red-deep);
+    --blotto-color-bdr-winning-nr:      var(--blotto-dfn-clr-red-lo);
+
+    /* Backgrounds */
+    --blotto-color-bgd-adminer-link:    var(--blotto-dfn-clr-grey-hi);
+    --blotto-color-bgd-button:          var(--blotto-dfn-clr-white);
+    --blotto-color-bgd-button-lgn:      var(--blotto-dfn-clr-red);
+    --blotto-color-bgd-button-lgn-hvr:  var(--blotto-dfn-clr-red-hi);
+    --blotto-color-bgd-button-lgt-hvr:  var(--blotto-dfn-clr-red-hi);
+    --blotto-color-bgd-button-lst-acv:  var(--blotto-dfn-clr-cyan);
+    --blotto-color-bgd-button-opt-acv:  var(--blotto-dfn-clr-red);
+    --blotto-color-bgd-chart-bar-1:     var(--blotto-dfn-clr-charcoal);
+    --blotto-color-bgd-chart-bar-2:     var(--blotto-dfn-clr-red);
+    --blotto-color-bgd-chart-bar-3:     var(--blotto-dfn-clr-cyan);
+    --blotto-color-bgd-chart-bar-4:     var(--blotto-dfn-clr-orange);
+    --blotto-color-bgd-chart-grid:      var(--blotto-dfn-clr-grey-light);
+    --blotto-color-bgd-login:           var(--blotto-dfn-clr-grey-hi);
+    --blotto-color-bgd-message-msg:     #884400;
+    --blotto-color-bgd-message-err:     #880000;
+    --blotto-color-bgd-message-wrn:     #e65c00;
+    --blotto-color-bgd-message-ok:      #008800;
+    --blotto-color-bgd-row-odd:         var(--blotto-dfn-clr-grey-light);
+    --blotto-color-bgd-row-even:        var(--blotto-dfn-clr-grey-hi);
+
+    /* Background positioning */
+    --blotto-size-bgd-login:            32%;
+    --blotto-align-bgd-login:           right;
+
+    /* Foregrounds */
+    --blotto-color-fgd-adminer-link:    var(--blotto-dfn-clr-red-deep);
+    --blotto-color-fgd-button:          var(--blotto-dfn-clr-red);
+    --blotto-color-fgd-button-lgt:      var(--blotto-dfn-clr-cyan);
+    --blotto-color-fgd-button-lgt-hvr:  var(--blotto-dfn-clr-white);
+    --blotto-color-fgd-button-lst:      var(--blotto-dfn-clr-cyan);
+    --blotto-color-fgd-button-lst-acv:  var(--blotto-dfn-clr-white);
+    --blotto-color-fgd-button-opt-hvr:  var(--blotto-dfn-clr-red-hi);
+    --blotto-color-fgd-button-opt-acv:  var(--blotto-dfn-clr-white);
+    --blotto-color-fgd-chart-legend:    var(--blotto-dfn-clr-charcoal);
+    --blotto-color-fgd-chart-grid:      var(--blotto-dfn-clr-grey-deep);
+    --blotto-color-fgd-heading:         var(--blotto-dfn-clr-charcoal);
+    --blotto-color-fgd-lk-aux:          var(--blotto-dfn-clr-grey-deep);
+    --blotto-color-fgd-lk-aux-acv:      var(--blotto-dfn-clr-black);
+    --blotto-color-fgd-lk-aux-hvr:      var(--blotto-dfn-clr-black);
+    --blotto-color-fgd-message:         var(--blotto-dfn-clr-white);
+    --blotto-color-fgd-negative-nr:     #880000;
+    --blotto-color-fgd-winning-nr:      var(--blotto-dfn-clr-cyan-lo);
+
+    /* Element font size corrections */
+    --blotto-font-size-button-choices:  0.75em;
+    --blotto-font-size-button-default:  0.9em;
+    --blotto-font-size-form-group-by:   0.8em;
+    --blotto-font-size-table:           0.8em;
+    /* Chart.js requires integer 1 thru 12; CSS units are ignored */
+    --blotto-font-size-chart-legend:    10px;
+
+    /* Drop-shadows */
+    --blotto-shadow-heading:            3px 3px 2px rgba(0,0,0,0.15);
+
+    /* Media URLs */
+    --blotto-url-button-login:          url(./go.png);
+    --blotto-url-link-csv:              url(./csv.png);
+    --blotto-url-link-image:            url(./image.png);
+    --blotto-url-link-table:            url(./table.png);
+    --blotto-url-login-bgd:             url('./login.svg');
+    --blotto-url-wait:                  url('./wait.gif');
+
+}
+
