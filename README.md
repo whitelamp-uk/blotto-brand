@@ -1,6 +1,6 @@
 # blotto-brand.git
 ------------------
 
-Default branding that may be forked for a new brand
+Default branding that may be copied to a new project create a brand built on blotto core software
 
 
