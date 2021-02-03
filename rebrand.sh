@@ -12,6 +12,7 @@ wd="$(pwd)"
 cd "$(dirname $0)"
 rm -rf .git
 rm LICENSE
+echo "\nblotto-$1\n\n" > README.md
 mv blotto-brand.sublime-project blotto-$1.sublime-project
 
 # Ascend into parent directory
