@@ -1,0 +1,8 @@
+
+
+
+GRANT SELECT ON `{{BLOTTO_DB}}`.`Updates_ABC`
+TO '{{BLOTTO_ORG_USER}}'
+;
+
+
