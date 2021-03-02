@@ -39,6 +39,7 @@
 
     /* Backgrounds */
     --blotto-color-bgd-adminer-link:    var(--blotto-dfn-clr-grey-hi);
+    --blotto-color-bgd-blink:           var(--blotto-dfn-clr-red);
     --blotto-color-bgd-button:          var(--blotto-dfn-clr-white);
     --blotto-color-bgd-button-lgn:      var(--blotto-dfn-clr-red);
     --blotto-color-bgd-button-lgn-hvr:  var(--blotto-dfn-clr-red-hi);
