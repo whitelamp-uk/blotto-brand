@@ -20,6 +20,16 @@
               <td>Proof</td>
               <td><a target="_blank" href="./proof/">Browse</a></td>
             </tr>
+            <tr>
+              <td>Small-print template</td>
+              <td>
+                <a id="small-print-view" href="#">View</a>
+                <div id="small-print">
+                  <h2>Small-print template</h2>
+Coming soon...
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
 
