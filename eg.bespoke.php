@@ -20,7 +20,7 @@ function draw_upcoming ($today=null) {
     return draw_upcoming_weekly (5,$today);
 }
 
-function prize_amount (&$prize,$verbose) {
+function prize_amount (&$prize,$verbose=false) {
     // Do nothing - just use the standard prize table configuration
     return;
     // Or calculate a prize pot at £x per £1k of revenue

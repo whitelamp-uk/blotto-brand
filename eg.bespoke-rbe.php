@@ -19,7 +19,7 @@ function enter ($draw_closed) {
     }
 }
 
-function prize_amount (&$prize,$verbose) {
+function prize_amount (&$prize,$verbose=false) {
     // Do nothing - just use the standard prize table configuration
     return;
     // Or calculate a prize pot at £x per £1k of revenue
