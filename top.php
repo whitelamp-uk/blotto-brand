@@ -31,8 +31,8 @@
       <a id="support" target="frame" href="./?support">Support request</a>
       <a id="adminer" target="frame" href="./adminer.php">Go mining</a>
 <?php if (!defined('BLOTTO_RBE_ORGS')): ?>
-      <a id="bacs" target="frame" href="./?bacs">BACS request</a>
-      <a id="supporter" target="frame" href="./?supporter">Supporter update</a>
+      <a id="bacs" target="frame" href="./?bacs">Mandates</a>
+      <a id="supporter" target="frame" href="./?supporter">Supporters</a>
 <?php endif; ?>
 
     </section>
