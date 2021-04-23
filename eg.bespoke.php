@@ -6,8 +6,12 @@ function chances ($frequency,$amount) {
     return chances_weekly ($frequency,$amount);
 }
 
-function draw_first ($first_collection_date) {
-    // Calculate player first draw date based on first collection received
+function draw_first ($first_collection_date,$ccc) {
+    // Calculate player first draw date based on
+    // first collection and canvassing company
+    if ($ccc=='STRP') {
+        return draw_first_asap ($first_collection_date);
+    }
     // Library function for the Zaffo model
     return draw_first_zaffo_model ($first_collection_date);
 }
