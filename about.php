@@ -21,6 +21,10 @@
               <td><a target="_blank" href="./proof/">Browse</a></td>
             </tr>
             <tr>
+              <td>Website integration demo</td>
+              <td><a target="_blank" href="./demo.php">View</a></td>
+            </tr>
+            <tr>
               <td>Small-print template</td>
               <td>
                 <a id="small-print-view" href="#">View</a>
