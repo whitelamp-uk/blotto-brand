@@ -22,18 +22,31 @@
     --blotto-dfn-clr-red-deep:          hsla(354,88%,15%,1);
     --blotto-dfn-clr-white:             hsla(0,0%,100%,1);
     --blotto-dfn-clr-white-chiffon:     hsla(0,0%,100%,0.95);
-    --blotto-dfn-fnt-default:           Helvetica Neue,Helvetica,Verdana,Arial,sans-serif;
-    --blotto-dfn-fsz-default:           16pt;
-    --blotto-dfn-fsz-h2:                2.2em;
-    --blotto-dfn-fsz-h3:                1.6em;
+    --blotto-dfn-fnt-header:            sans;
+    --blotto-dfn-fwt-header:            bold;
+    --blotto-dfn-fsz-header:            1.15em;
+    --blotto-dfn-fnt-title:             sans;
+    --blotto-dfn-fwt-title:             bold;
+    --blotto-dfn-fsz-title:             2.2em;
+    --blotto-dfn-fnt-subtitle:          sans;
+    --blotto-dfn-fwt-subtitle:          bold;
+    --blotto-dfn-fsz-subtitle:          1.6em;
+    --blotto-dfn-fnt-footer:            sans;
+    --blotto-dfn-fwt-footer:            normal;
+    --blotto-dfn-fsz-footer:            0.8em;
+    --blotto-dfn-fnt-default:           sans;
+    --blotto-dfn-fwt-default:           normal;
+    --blotto-dfn-fsz-default:           14pt;
+
 
     /* Borders */
     --blotto-color-bdr-button:          var(--blotto-dfn-clr-charcoal-hi) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-hi);
     --blotto-color-bdr-button-lgt-hvr:  var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo);
     --blotto-color-bdr-button-lst-acv:  var(--blotto-dfn-clr-cyan-lo) var(--blotto-dfn-clr-cyan-hi) var(--blotto-dfn-clr-cyan-hi) var(--blotto-dfn-clr-cyan-lo);
+    --blotto-color-bdr-button-opt:      var(--blotto-dfn-clr-charcoal-hi) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-hi);
     --blotto-color-bdr-button-opt-acv:  var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi);
-    --blotto-color-bdr-button-opt-avh:  var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo);
     --blotto-color-bdr-form-options:    var(--blotto-dfn-clr-red);
+    --blotto-color-bdr-layout:          var(--blotto-dfn-clr-black);
     --blotto-color-bdr-table:           var(--blotto-dfn-clr-red-deep);
     --blotto-color-bdr-winning-nr:      var(--blotto-dfn-clr-red-lo);
 
@@ -59,10 +72,6 @@
     --blotto-color-bgd-row-odd:         var(--blotto-dfn-clr-grey-light);
     --blotto-color-bgd-row-even:        var(--blotto-dfn-clr-grey-hi);
 
-    /* Background positioning */
-    --blotto-size-bgd-login:            32%;
-    --blotto-align-bgd-login:           right;
-
     /* Foregrounds */
     --blotto-color-fgd-adminer-link:    var(--blotto-dfn-clr-red-deep);
     --blotto-color-fgd-button:          var(--blotto-dfn-clr-red);
@@ -70,6 +79,7 @@
     --blotto-color-fgd-button-lgt-hvr:  var(--blotto-dfn-clr-white);
     --blotto-color-fgd-button-lst:      var(--blotto-dfn-clr-cyan);
     --blotto-color-fgd-button-lst-acv:  var(--blotto-dfn-clr-white);
+    --blotto-color-fgd-button-opt:      var(--blotto-dfn-clr-red);
     --blotto-color-fgd-button-opt-hvr:  var(--blotto-dfn-clr-red-hi);
     --blotto-color-fgd-button-opt-acv:  var(--blotto-dfn-clr-white);
     --blotto-color-fgd-chart-legend:    var(--blotto-dfn-clr-charcoal);
@@ -82,11 +92,24 @@
     --blotto-color-fgd-negative-nr:     #880000;
     --blotto-color-fgd-winning-nr:      var(--blotto-dfn-clr-cyan-lo);
 
+    /* Background positioning */
+    --blotto-size-bgd-login:            32%;
+    --blotto-align-bgd-login:           right;
+
+    /* Media, box and table dimensions */
+    --blotto-dims-column-spacing:       8.6em;
+    --blotto-dims-header-height:        2.6em;
+    --blotto-dims-header-nudge:         0.55em;
+    --blotto-dims-logo-login-height:    60px;
+    --blotto-dims-logo-login-top:       0.92em;
+    --blotto-dims-logo-blotto-height:   60px;
+    --blotto-dims-logo-blotto-top:      0.92em;
+
     /* Element font size corrections */
     --blotto-font-size-button-choices:  0.75em;
-    --blotto-font-size-button-default:  0.9em;
+    --blotto-font-size-button-default:  var(--blotto-dfn-fsz-default);
     --blotto-font-size-form-group-by:   0.8em;
-    --blotto-font-size-table:           0.8em;
+    --blotto-font-size-table:           var(--blotto-dfn-fsz-default);
     /* Chart.js requires integer 1 thru 12; CSS units are ignored */
     --blotto-font-size-chart-legend:    10px;
 
