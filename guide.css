@@ -39,20 +39,31 @@
     --blotto-dfn-fsz-default:           14pt;
 
 
+    /* Text */
+    --blotto-text-decor-header-acv:     none;
+    --blotto-text-decor-footer-acv:     none;
+
+    /* Content */
+    --blotto-content-margin-left:       2em;
+
     /* Borders */
     --blotto-color-bdr-button:          var(--blotto-dfn-clr-charcoal-hi) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-hi);
+    --blotto-color-bdr-button-lgt:      var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi);
     --blotto-color-bdr-button-lgt-hvr:  var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo);
     --blotto-color-bdr-button-lst-acv:  var(--blotto-dfn-clr-cyan-lo) var(--blotto-dfn-clr-cyan-hi) var(--blotto-dfn-clr-cyan-hi) var(--blotto-dfn-clr-cyan-lo);
     --blotto-color-bdr-button-opt:      var(--blotto-dfn-clr-charcoal-hi) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-lo) var(--blotto-dfn-clr-charcoal-hi);
     --blotto-color-bdr-button-opt-acv:  var(--blotto-dfn-clr-red-hi) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-lo) var(--blotto-dfn-clr-red-hi);
     --blotto-color-bdr-form-options:    var(--blotto-dfn-clr-red);
     --blotto-color-bdr-layout:          var(--blotto-dfn-clr-black);
+    --blotto-color-bdr-login-input:     default;
+    --blotto-color-bdr-popup:           var(--blotto-dfn-clr-gold-lo);
     --blotto-color-bdr-table:           var(--blotto-dfn-clr-red-deep);
     --blotto-color-bdr-winning-nr:      var(--blotto-dfn-clr-red-lo);
 
     /* Backgrounds */
     --blotto-color-bgd-adminer-link:    var(--blotto-dfn-clr-grey-hi);
     --blotto-color-bgd-blink:           var(--blotto-dfn-clr-red);
+    --blotto-color-bgd-body:            var(--blotto-dfn-clr-white);
     --blotto-color-bgd-button:          var(--blotto-dfn-clr-white);
     --blotto-color-bgd-button-lgn:      var(--blotto-dfn-clr-red);
     --blotto-color-bgd-button-lgn-hvr:  var(--blotto-dfn-clr-red-hi);
@@ -64,7 +75,9 @@
     --blotto-color-bgd-chart-bar-3:     var(--blotto-dfn-clr-cyan);
     --blotto-color-bgd-chart-bar-4:     var(--blotto-dfn-clr-orange);
     --blotto-color-bgd-chart-grid:      var(--blotto-dfn-clr-grey-light);
+    --blotto-color-bgd-list-stripe:     var(--blotto-dfn-clr-grey-light);
     --blotto-color-bgd-login:           var(--blotto-dfn-clr-grey-hi);
+    --blotto-color-bgd-login-input:     default;
     --blotto-color-bgd-message-msg:     #884400;
     --blotto-color-bgd-message-err:     #880000;
     --blotto-color-bgd-message-wrn:     #e65c00;
