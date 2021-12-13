@@ -25,6 +25,7 @@
     <section id="footer">
 
       <a id="about" target="frame" href="./?about">About</a>
+      <a id="statements" target="frame" href="./?statements">Statements</a>
       <a id="invoices" target="frame" href="./?invoices">Invoices</a>
       <a id="drawreports" target="frame" href="./?drawreports">Draws</a>
       <a id="terms" target="frame" href="./?terms">Terms</a>
