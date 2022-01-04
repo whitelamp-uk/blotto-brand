@@ -11,7 +11,7 @@
       <a id="Cancellations" target="frame" href="./?list=Cancellations">Cancellations</a>
       <a id="ANLs" target="frame" href="./?list=ANLs">ANLs</a>
       <a id="Insurance" target="frame" href="./?list=Insurance">Insure</a>
-      <a id="Changes" target="frame" href="./?list=Changes">CCCs</a>
+      <a id="Changes" target="frame" href="./?list=Changes">CCRs</a>
       <a id="Updates" target="frame" href="./?list=Updates">CRM</a>
 <?php endif; ?>
       <a id="logout" href="./?logout">Log out</a>
