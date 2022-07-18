@@ -1,5 +1,5 @@
 <?php
-$sat_next = new \DateTime ('2022-07-23');
+$sat_next = new \DateTime ();
 $sat_next->add (new DateInterval('P1D'));
 while ($sat_next->format('w')!=6) {
     $sat_next->add (new DateInterval('P1D'));
