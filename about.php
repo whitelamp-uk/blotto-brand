@@ -107,7 +107,7 @@ document.addEventListener (
           </tr>
           <tr>
             <td>Web APIs</td>
-            <td><a target="_blank" href="./demo.php">View demo and source code</a></td>
+            <td><a target="_blank" href="./demo.php">View demo source code</a></td>
           </tr>
           <tr>
             <td>Self-service sign-up (direct debit)</td>
