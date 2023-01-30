@@ -110,15 +110,15 @@ document.addEventListener (
             <td><a target="_blank" href="./demo.php">View demo source code</a></td>
           </tr>
           <tr>
-            <td>Self-service sign-up (direct debit)</td>
+            <td>Self-service sign-up (direct debit) URL</td>
             <td><a class="write-url" target="_blank" href="./sss.php">sss.php</a></td>
           </tr>
           <tr>
-            <td>Online tickets (ad hoc)</td>
+            <td>Online tickets (ad hoc) URL</td>
             <td><a class="write-url" target="_blank" href="./tickets.php">tickets.php</a></td>
           </tr>
           <tr>
-            <td>Online tickets (promotional draw)</td>
+            <td>Online tickets (promotional draw) URL</td>
             <td><a class="write-url" target="_blank" href="./tickets.php?d=2022-04-07">tickets.php?d=2022-04-07</a></td>
           </tr>
 <?php foreach (www_pay_apis() as $code=>$api): ?>
