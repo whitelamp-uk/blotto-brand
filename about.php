@@ -10,12 +10,19 @@ for ($i=0;$i<5;$i++) {
 }
 ?>
 
-    <section id="about" class="content">
+    <section id="about" class="content about">
 
         <h2>System information</h2>
 
         <table class="report">
           <tbody>
+            <tr>
+              <td colspan="2"><strong>About us</strong></td>
+            </tr>
+            <tr>
+              <td>Our address</td>
+              <td><?php require __DIR__.'/address.php'; ?></td>
+            </tr>
             <tr>
               <td>Product</td>
               <td><?php echo htmlspecialchars(ucwords(BLOTTO_BRAND)); ?> <?php version(); ?></td>
@@ -64,14 +71,101 @@ for ($i=0;$i<5;$i++) {
             </tr>
 <?php     endforeach; ?>
 <?php endforeach; ?>
-            <tr>
-              <td>Our address</td>
-              <td><?php require __DIR__.'/address.php'; ?></td>
-            </tr>
           </tbody>
         </table>
 
     </section>
+
+
+    <section id="configuration" class="content about">
+
+      <script>
+document.addEventListener (
+    'DOMContentLoaded',
+    function ( ) {
+        var a,as,url
+        url = document.URL.split ('?');
+        url = url[0];
+        as = document.body.querySelectorAll ('a.write-url');
+        for (a of as) {
+            a.innerText = url + a.innerText;
+        }
+    }
+);
+      </script>
+
+      <table class="report">
+        <tbody>
+          <tr>
+            <td colspan="2"><h2>Technical details</h2></td>
+          </tr>
+          <tr>
+            <td colspan="2"><h3>Required by you</h3></td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Integration details</strong></td>
+          </tr>
+          <tr>
+            <td>Web APIs</td>
+            <td><a target="_blank" href="./demo.php">View demo and source code</a></td>
+          </tr>
+          <tr>
+            <td>Self-service sign-up (direct debit)</td>
+            <td><a class="write-url" target="_blank" href="./sss.php">sss.php</a></td>
+          </tr>
+          <tr>
+            <td>Online tickets (ad hoc)</td>
+            <td><a class="write-url" target="_blank" href="./tickets.php">tickets.php</a></td>
+          </tr>
+          <tr>
+            <td>Online tickets (promotional draw)</td>
+            <td><a class="write-url" target="_blank" href="./tickets.php?d=2022-04-07">tickets.php?d=2022-04-07</a></td>
+          </tr>
+<?php foreach (www_pay_apis() as $code=>$api): ?>
+          <tr>
+            <td>One-off online tickets payment provider callback URL (<?php echo htmlspecialchars ($code); ?>)</td>
+            <td><a class="write-url" href="./callback.php?p=<?php echo htmlspecialchars ($code); ?>">callback.php?p=<?php echo htmlspecialchars ($code); ?></a></td>
+          </tr>
+<?php endforeach; ?>
+          <tr>
+            <td colspan="2"><h3>Provided by you</h3></td>
+          </tr>
+<?php $org = org (); ?>
+          <tr>
+            <td colspan="2"><strong>Self-service sign-up</strong></td>
+          </tr>
+          <tr>
+            <td>SUN (direct debit service user number)</td>
+            <td><?php if (defined('BLOTTO_SSS_SUN') && BLOTTO_SSS_SUN) {echo htmlspecialchars (BLOTTO_SSS_SUN);} else { echo '[Please report to administrator]'; } ?></td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>General</strong></td>
+          </tr>
+          <tr>
+            <td>Terms &amp; conditions URL</td>
+            <td><?php if ($org['signup_url_terms']) {echo htmlspecialchars ($org['signup_url_terms']);} else { echo '[Please report to administrator]'; } ?></td>
+          </tr>
+          <tr>
+            <td>Privacy statement URL</td>
+            <td><?php if ($org['signup_url_privacy']) {echo htmlspecialchars ($org['signup_url_privacy']);} else { echo '[Please report to administrator]'; } ?></td>
+          </tr>
+          <tr>
+            <td>Supporter contact email</td>
+            <td><?php if ($org['admin_email']) {echo htmlspecialchars ($org['admin_email']);} else { echo '[Please report to administrator]'; } ?></td>
+          </tr>
+          <tr>
+            <td>Supporter contact telephone</td>
+            <td><?php if ($org['admin_phone']) {echo htmlspecialchars ($org['admin_phone']);} else { echo '[Please report to administrator]'; } ?></td>
+          </tr>
+          <tr>
+            <td>Self-exclusion email address</td>
+            <td><?php if (defined('BLOTTO_SSS_SELFEX_EMAIL') && BLOTTO_SSS_SELFEX_EMAIL) {echo htmlspecialchars (BLOTTO_SSS_SELFEX_EMAIL);} else { echo '[Please report to administrator]'; } ?></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
 
     <script>
 document.body.classList.add ('framed');
