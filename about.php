@@ -161,6 +161,29 @@ document.addEventListener (
             <td>Self-exclusion email address</td>
             <td><?php if (defined('BLOTTO_SSS_SELFEX_EMAIL') && BLOTTO_SSS_SELFEX_EMAIL) {echo htmlspecialchars (BLOTTO_SSS_SELFEX_EMAIL);} else { echo '[Please report to administrator]'; } ?></td>
           </tr>
+
+          <tr>
+            <td colspan="2"><h3>Other configuration</h3></td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Fees @ <?php echo gmdate ('Y-m-d'); ?></strong></td>
+          </tr>
+<?php if (!count($fees=fees())): ?>
+          <tr>
+            <td>No fees configured</td>
+            <td><a target="_blank" href="./demo.php">View demo source code</a></td>
+          </tr>
+<?php else: ?>
+<?php     foreach ($fees as $code=>$fee): ?>
+<?php         if ($code!='total'): ?>
+          <tr>
+            <td><code><?php echo htmlspecialchars ($code); ?></code><?php echo htmlspecialchars ($fee['notes']); ?></td>
+            <td><code><?php echo htmlspecialchars (BLOTTO_CURRENCY) . number_format ($fee['rate']/100,2,'.',''); ?></code></td>
+          </tr>
+<?php         endif; ?>
+<?php     endforeach; ?>
+<?php endif; ?>
+
         </tbody>
       </table>
 
