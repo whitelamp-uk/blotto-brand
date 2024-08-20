@@ -28,6 +28,7 @@
       <a id="statements" target="frame" href="./?statements">Statements</a>
       <a id="invoices" target="frame" href="./?invoices">Invoices</a>
       <a id="drawreports" target="frame" href="./?drawreports">Draws</a>
+      <a id="MoniesWeekly" target="frame" href="./?list=MoniesWeekly">Monies</a>
       <a id="terms" target="frame" href="./?terms">Terms</a>
       <a id="privacy" target="frame" href="./?privacy">Privacy</a>
       <a id="guide" target="frame" href="./?guide">Guide</a>
