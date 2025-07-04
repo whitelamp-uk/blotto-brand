@@ -33,7 +33,8 @@
       <a id="privacy" target="frame" href="./?privacy">Privacy</a>
       <a id="guide" target="frame" href="./?guide">Guide</a>
       <a id="support" target="frame" href="./?support">Support request</a>
-      <a id="adminer" target="frame" href="./adminer.php">Go mining</a>
+      <a id="adminer" target="frame" href="./?list=UpdatesLatest">CRM grab</a>
+      <a id="adminer" target="frame" href="./adminer.php">Data</a>
 <?php if (!defined('BLOTTO_RBE_ORGS')): ?>
       <a id="bacs" target="frame" href="./?bacs">Mandates</a>
       <a id="supporter" target="frame" href="./?supporter">Supporters</a>
