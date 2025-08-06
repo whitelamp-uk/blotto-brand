@@ -41,7 +41,7 @@ for ($i=0;$i<5;$i++) {
             </tr>
 <?php foreach ($draws as $d): ?>
             <tr>
-              <td colspan="2"><strong>Prizes @ <?php echo $d->date; ?></strong> (closed <?php echo $d->closed; ?>)</td>
+              <td colspan="2">Prizes @ <?php echo $d->date; ?> (closed <strong><?php echo $d->closed; ?></strong>)</td>
             </tr>
 <?php     foreach ($d->prizes as $p): ?>
             <tr>
