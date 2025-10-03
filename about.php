@@ -1,11 +1,16 @@
 <?php
-// Prizes for next four draws
+// Prizes for upcoming draws
 $draws          = [];
 $dt             = new \DateTime ();
-for ($i=0;$i<5;$i++) {
+for ($i=0;$i<10;$i++) {
     $dc         = draw_upcoming ($dt->format ('Y-m-d'));
-    $draws[]    = draw ($dc);
+    if ($dc>=BLOTTO_DRAW_CLOSE_1) {
+        $draws[] = draw ($dc);
+    }
     $dt         = new \DateTime ($dc);
+    if ($i==0) {
+        $dcday  = $dt->format ('l');
+    }
     $dt->add (new DateInterval('P1D'));
 }
 ?>
