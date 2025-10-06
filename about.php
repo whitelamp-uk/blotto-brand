@@ -1,4 +1,5 @@
 <?php
+
 // Prizes for upcoming draws
 $draws          = [];
 $dt             = new \DateTime ();
@@ -13,6 +14,13 @@ for ($i=0;$i<10;$i++) {
     }
     $dt->add (new DateInterval('P1D'));
 }
+
+// Preferences
+$oid = BLOTTO_ORG_ID;
+$zo = connect (BLOTTO_CONFIG_DB,BLOTTO_UN,BLOTTO_PW);
+$preferences = $zo->query ("SELECT `p_number`,`legend` FROM `blotto_field` WHERE `org_id`=$oid");
+$preferences =$preferences->fetch_all (MYSQLI_ASSOC);
+
 ?>
 
     <section id="about" class="content about">
@@ -168,6 +176,17 @@ document.addEventListener (
               <td>Self-exclusion email address</td>
               <td><?php if (defined('BLOTTO_SSS_SELFEX_EMAIL') && BLOTTO_SSS_SELFEX_EMAIL) {echo htmlspecialchars (BLOTTO_SSS_SELFEX_EMAIL);} else { echo '[Please report to administrator]'; } ?></td>
             </tr>  
+
+            <tr>
+              <td colspan="2"><strong>Preference columns</strong></td>
+            </tr>
+<?php foreach ($preferences as $i=>$p): ?>
+            <tr>
+              <td>p<?php echo $p['p_number']; ?></td>
+              <td><?php echo htmlspecialchars ($p['legend']); ?></td>
+            </tr>
+<?php endforeach; ?>
+            <tr>
 
             <tr>
               <td colspan="2"><h3>Other configuration</h3></td>
