@@ -225,7 +225,10 @@ document.addEventListener (
             <tr>
               <td>Template ref</td>
               <td>
-                <input type="text" name="template_ref" placeholder="Mailing service ID" />
+                <input type="checkbox" onchange="var i=document.getElementById('template-ref');if(this.checked){i.value='<?php echo htmlspecialchars ($org['anl_cm_id']); ?>'}else{i.value=''}">
+                use the configured template<br/>
+                <input id="template-ref" type="text" name="template_ref" placeholder="Email service template id" />
+                <input type="submit" name="test_email_anl" value="Send random ANL" />
               </td>
             </tr>
             <tr>
